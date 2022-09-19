@@ -1,8 +1,0 @@
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.exe.config
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.exe
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.pdb
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.AssemblyReference.cache
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.SuggestedBindingRedirects.cache
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.CoreCompileInputs.cache
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.exe
-D:\TFP_FR_572\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.pdb

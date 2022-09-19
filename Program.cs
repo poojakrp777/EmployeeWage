@@ -14,34 +14,18 @@ namespace EmployeeWage
         public const int NUM_OF_WORKING_DAYS = 2;
         static void Main(string[] args)
         {
-            
-            int empHrs = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
-            Console.WriteLine("Welcome to EmployeeWage computation");
-            for(int day=0;day<NUM_OF_WORKING_DAYS;day++)
+
+            int IS_FULL_TIME = 1;
+            Random random = new Random();
+            int empCheck = random.Next(0, 2);
+            if (empCheck == IS_FULL_TIME)
             {
-                Random random = new Random();
-                int empCheck = random.Next(0, 3);
-                switch (empCheck)
-                {
-                    case IS_PART_TIME:
-                        empHrs = 4;
-                        break;
-
-                    case IS_FULL_TIME:
-                        empHrs = 8;
-                        break;
-
-                    default:
-                        empHrs = 0;
-                        break;
-                }
-                empWage = empHrs * EMP_RATE_PER_HR;
-                totalEmpWage+=empWage;
-                Console.WriteLine("Employee wage is:" + empWage);
+                Console.WriteLine("Employee is present");
             }
-            Console.WriteLine("totalEmpwage:"+totalEmpWage);
+            else
+            {
+                Console.WriteLine("Employee is absent");
+            }
         }
     }
 }
