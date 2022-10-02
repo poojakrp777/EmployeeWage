@@ -11,11 +11,9 @@ namespace EmployeeWage
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
         public const int IS_ABSENT = 0;
-        public const int Emp_Rate_Per_Hr = 20;
-        public const int Number_Of_Working_Days = 20;
-        public const int Max_Hr_In_Month = 100;
 
-        public int ComputeEmpWage()
+
+        public int ComputeEmpWage(string company, int Emp_Rate_Per_Hr, int Number_Of_Working_Days, int Max_Hr_In_Month)
         {
             int emphrs = 0;
             int empwage = 0;
@@ -23,7 +21,7 @@ namespace EmployeeWage
             int totalworkingdays = 0;
             int totalworkinghrs = 0;
 
-            while (totalworkinghrs <= Max_Hr_In_Month && totalworkingdays <= Number_Of_Working_Days)
+            while (totalworkinghrs <= Max_Hr_In_Month && totalworkingdays < Number_Of_Working_Days)
             {
                 totalworkingdays++;
                 Random random = new Random();
