@@ -11,17 +11,14 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation");
-            Console.WriteLine("Output of Total Employee wage and Save Total Wage of company as :");
+            Console.WriteLine("Output of Employee wage for Multiple Company Using Interface Approach :");
             //Creating Object of the class to call in Main method
             //because method is non static
 
-            Employeewage dmart = new Employeewage("Dmart", 20, 2, 10);
-            Employeewage reliance = new Employeewage("Reliance", 10, 4, 20);
-            dmart.computeEmpWage();
-            Console.WriteLine(dmart.toString());
-
-            reliance.computeEmpWage();
-            Console.WriteLine(reliance.toString());
+            EmployeewageArray builder = new EmployeewageArray();
+            builder.addCompanyEmpWage("Dmart", 20, 2, 10);
+            builder.addCompanyEmpWage("Reliance", 10, 4, 20);
+            builder.computeEmpWage();
         }
     }
 }
